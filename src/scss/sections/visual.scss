@@ -1,0 +1,19 @@
+@import "../componentes/mixins";
+@import "../componentes/section-description";
+
+.container {
+  @include container;
+  font-family:$prime_font;
+
+}
+
+.visual {
+  background: url("../img/header/header-background.png") center/cover no-repeat;
+
+}
+
+.section-description-wrapper {
+  @include d-flex-row;
+  padding: 90px 0 480px 0;
+  justify-content: center;
+}

@@ -1,0 +1,70 @@
+@import "../componentes/mixins";
+@import "../componentes/variables";
+
+.about-us{
+  background-image: url("../img/about-us/second-b-g.png");
+  padding-top: 100px;
+  background-repeat:no-repeat ;
+  background-position: 0 20px;
+  background-size: cover;
+
+}
+.container{
+  @include container;
+}
+.title{
+  font-size: 35px;
+  color: $text_white;
+  font-weight: 650;
+  margin-bottom: 40px;
+}
+
+.right-column-title{
+  font-size: 35px;
+  color: white;
+  padding: 50px 0;
+}
+.about-us-logo{
+  @include d-flex-row;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+}
+.about-us-logo-item{
+  flex: 0 0 26%;
+  max-width: 26%;
+  margin: 50px 0;
+
+}
+.item-image-wrapper{
+  align-items: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.about-us-item-description{
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  font-family: $second_font;
+  font-style: italic;
+  line-height: 25px;
+}
+.about-us-logo-description{
+  font-size: 14px;
+  font-family: $prime_font;
+  color: $lightViolet;
+  padding-bottom: 40px;
+  position: relative;
+
+}
+.about-us-logo-description::after{
+  content: "";
+  transform: translate(-100%);
+  position: absolute;
+  width: 780px;
+  height: 2px;
+  background-color: #645766;
+  bottom: 22px;
+}

@@ -1,0 +1,80 @@
+@import "../componentes/mixins";
+@import "../componentes/variables";
+@media only screen and (max-width: 992px) and (min-width: 481px) {
+  .container {
+    max-width: 768px;
+  }
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .left-column {
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  .left-column-item {
+    justify-content: center;
+    padding: 0 0 60px 0;
+
+  }
+  .btn-positioned{
+    width: 210px;
+
+  }
+  .about-us-logo-item {
+    flex: 0 0 42%;
+    max-width: 42%;
+    justify-content: space-between;
+
+  }
+  .left-column-image {
+    margin-right: 24px;
+
+  }
+  .about-us-logo-description::after {
+    max-width: 600px;
+    transform: translate(-50%);
+    left: 50%;
+
+  }
+  .visible-title {
+    display: none;
+  }
+  .invisible-title {
+    display: inline-block;
+    padding: 55px;
+  }
+  .left-column-icon-heading {
+    margin-bottom: 10px;
+  }
+  .pricing-table-row{
+    justify-content: space-between;
+    max-width: 575px;
+    margin: 0 auto;
+    color: white;
+
+
+
+  }
+  header{
+    padding: 20px 0;
+  }
+  .row-cards-column{
+    align-self: center;
+    margin: 40px 0 0 0;
+
+
+  }
+  .nav-bar-menu{
+    margin-right: 0;
+  }
+  .git-hub-icon-item{
+    margin-left: 15px;
+  }
+  .nav-bar-wrapper{
+    order: 1;
+    margin: 0 auto;
+    position: initial;
+    padding-top: 20px;
+  }
+}

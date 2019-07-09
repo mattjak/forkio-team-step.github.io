@@ -1,0 +1,84 @@
+@import "../componentes/mixins";
+@import "../componentes/section-description";
+
+.network-area {
+  position: relative;
+  font-family: $prime_font;
+
+}
+
+.container {
+  @include container;
+}
+
+.btn-positioned {
+  position: absolute;
+  top: -20px;
+  font-size: 16px;
+  left: 50%;
+  width: 210px;
+  transform: translate(-50%);
+}
+
+.btn-positioned:hover {
+  border: 1px solid $lightViolet;
+
+}
+
+.period-offer {
+  padding-top: 50px;
+}
+
+.network-area-section-description-positioning {
+  padding: 50px 0;
+
+}
+
+.section-description-title-color-weight {
+  color: #635c73;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.git-hub-button-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.git-hub-icon-item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 15px;
+  font-style: $prime_font;
+}
+
+.icon1, .icon2 {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+
+}
+
+.icon1 {
+  border: 1px solid #d5d5d5;
+  padding: 5px 15px;
+  background-color: #f1f1f1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.icon2 {
+  border: 1px solid #d5d5d5;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+  padding: 8px 5px 6px 5px;
+}
+
+.section-description-subtitle-deep-gray {
+  font-size: 18px;
+  color: #50555d;
+}

@@ -1,0 +1,74 @@
+@import "../componentes/variables";
+@import "../componentes/mixins";
+
+header{
+  background: #27262a;
+  padding: 30px 0;
+  font-family:$prime_font;
+}
+.header-container{
+  @include d-flex-row;
+  justify-content: space-between;
+  position: relative;
+}
+.container{
+  @include container;
+}
+.nav-bar-logo{
+  text-decoration: none;
+  @include d-flex-row;
+  align-items: center;
+}
+.logo-img{
+  width: 43px;
+  height: 41px;
+  background: url("../img/header/header-logo.png") ;
+}
+.nav-bar-logo:hover .logo-img{
+  background: url("../img/header/logo-hover.png") ;
+
+}
+.nav-bar-logo:hover .nav-bar-logo-description{
+  color: $text_white;
+}
+.nav-bar-menu-item-link:hover{
+  color: $text_white;
+}
+
+.nav-bar-logo-description{
+  text-transform: uppercase;
+  color: #8d81ac;
+  font-size: 24px;
+  padding-left: 15px;
+  font-style:$prime_font;
+
+}
+.nav-bar-menu{
+  margin-right: 40px;
+}
+.nav-bar-menu-item{
+  display: inline-block;
+  margin-left: 4vw;
+  font-weight: 600;
+
+}
+
+.nav-bar-wrapper{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 15%;
+  top: 40%;
+
+
+}
+.nav-bar-menu-item-link{
+  text-decoration: none;
+  color: $lightViolet;
+  font-size: 16px;
+}
+
+
+.dropdown-menu-controller{
+  display: none;
+}

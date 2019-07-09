@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+body{
+  font-family: 'Montserrat', sans-serif;
+
+}
+.section-description-title {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  font-weight: 650;
+}
+.section-description-subtitle {
+  font-size: 22px;
+  color: $lightViolet;
+  padding-top: 18px;
+}
+.section-description-subtitle-grey {
+  color: #50555d;
+  font-size: 16px;
+
+}
+
+

@@ -1,0 +1,16 @@
+@import "variables";
+
+.btn {
+  display: inline-block;
+  padding: 12px 40px;
+  text-decoration: none;
+  background-color: $lightViolet;
+  border-radius: 44px;
+  color: #fff;
+  font-weight: 600;
+
+}
+.btn:hover{
+  background-color: $text_white;
+  color: $lightViolet;
+}
