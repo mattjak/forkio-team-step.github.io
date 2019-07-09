@@ -2,11 +2,8 @@
 @import "../componentes/variables";
 
 .about-us{
-  background-image: url("../img/about-us/second-b-g.png");
+  background: url("../img/about-us/about-us-background.png") no-repeat center/cover;
   padding-top: 100px;
-  background-repeat:no-repeat ;
-  background-position: 0 20px;
-  background-size: cover;
 
 }
 .container{
